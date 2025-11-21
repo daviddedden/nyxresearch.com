@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="cat_favicon.ico" type="image/x-icon">
     <style>
         * {
             margin: 0;
@@ -178,6 +178,72 @@
             border-bottom: 1px solid var(--color-accent);
         }
 
+/* Focus Areas Section */
+        .focus-areas {
+            margin-bottom: 80px;
+            animation: fadeInUp 0.8s ease-out 0.25s backwards;
+        }
+
+        .focus-intro {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .focus-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .focus-list li {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .focus-list li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        .experiments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .experiment-link {
+            padding: 1rem;
+            border-radius: 8px;
+            background: rgba(106, 213, 255, 0.05);
+            border: 1px solid rgba(106, 213, 255, 0.1);
+            transition: var(--transition);
+            display: block;
+        }
+
+        .experiment-link:hover {
+            background: rgba(106, 213, 255, 0.1);
+            border-color: rgba(106, 213, 255, 0.25);
+            transform: translateX(8px);
+        }
+
+        .experiment-link a {
+            color: var(--color-accent);
+            font-weight: 500;
+            display: block;
+        }
+
+        .experiment-link a:hover {
+            border-bottom: 1px solid var(--color-accent);
+        }
+
         /* Let's Nerd Out Section */
         .contact-section {
             padding: 2rem;
@@ -311,6 +377,20 @@
                     <a href="#lora-mixing">LoRA/Model Mixing Experiments</a>
                 </div> -->
             </div>
+        </section>
+
+        <!-- Focus Areas Section -->
+        <section class="focus-areas">
+            <h2>Focus Areas</h2>
+            <p class="focus-intro">My research currently centers on:</p>
+            <ul class="focus-list">
+                <li>Local AI generation using ComfyUI for privacy and cost control</li>
+                <li>Text-to-image and text-to-video generation workflows</li>
+                <li>Custom LoRA training for specialized use cases</li>
+                <li>Prompt engineering techniques for consistent outputs</li>
+                <li>Hardware optimization and performance benchmarking</li>
+                <li>Monetization strategies through asset creation and model training</li>
+            </ul>
         </section>
 
         <!-- Contact Section -->
